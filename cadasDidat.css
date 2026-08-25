@@ -41,7 +41,6 @@ header .logo{
     height: auto;
     display: block;
 }
-
 .info-botao{
     padding: 10px 20px;
     background-color: #1b284d;
@@ -178,72 +177,153 @@ main{
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.aniversariantes{
+.gerenciamento-didatico{
     width: 100%;
-    margin-top: 20px;
-    background: #ffc88f;
-    border: 1px solid #ffc88f;
-    padding: 14px;
-    border-radius: 8px;
-    overflow-x: auto;
-}
-
-.aniversariantes h4{
-    text-align: center;
-    color: #fcfbf9;
-    margin-bottom: 8px;
-    font-size: 16px;
-}
-
-.tabela-aniversariantes{
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-    background: #fcfbf9;
-}
-
-.tabela-aniversariantes th,
-.tabela-aniversariantes td{
-    border: 1px solid #8aacf7;
-    padding: 6px 8px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.tabela-aniversariantes th{
     background: #8aacf7;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+
+.gd-topo{
+    background: linear-gradient(to right, #ffcf99, #ffc98c);
     color: #fcfbf9;
     font-weight: bold;
-}
-
-.tabela-aniversariantes td:nth-child(2),
-.tabela-aniversariantes td:nth-child(4){
-    text-align: left;
-    color: #1b284d;
-}
-.tabela-aniversariantes td:nth-child(3){
-    color: #1b284d; /* escolha a cor aqui */
-    font-weight: bold;
-}
-
-.mais-aniversariantes{
-    display: block;
     text-align: center;
-    margin-top: 15px;
-    font-size: 13px;
-    color: #fcfbf9;
-    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;
 }
 
-.mais-aniversariantes:hover{
-    text-decoration: underline;
+.gd-conteudo{
+    display: flex;
+    gap: 20px;
+    padding: 18px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-.email-icone{
-    color: #1b284d; /* muda a cor aqui */
-    font-size: 16px;
+
+.gd-esquerda{
+    flex: 1;
+    min-width: 280px;
+}
+
+.gd-direita{
+    width: 280px;
+    max-width: 100%;
+    background: #ffc88f;
+    border-radius: 10px;
+    padding: 20px 16px;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35);
+}
+
+.campo,
+.gd-item{
+    margin-bottom: 18px;
+}
+
+.campo label,
+.gd-item label{
+    display: block;
+    margin-bottom: 6px;
+    color: #fcfbf9;
     font-weight: bold;
 }
 
+.campo select,
+.campo input,
+.input-icon input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b9c5d8;
+    border-radius: 8px;
+    background: #fff;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.campo select:focus,
+.campo input:focus,
+.input-icon input:focus{
+    border-color: #245ace;
+    box-shadow: 0 0 0 3px rgba(36,90,206,0.12);
+}
+
+.periodo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.periodo label{
+    min-width: 70px;
+    margin-bottom: 0;
+}
+
+.periodo input{
+    width: 150px;
+}
+
+.periodo span{
+    font-weight: bold;
+    color: #c24a00;
+}
+
+.input-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-icon span{
+    cursor: pointer;
+    font-size: 18px;
+    color: #6d5b3f;
+}
+
+.botao-pesquisar{
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #1b284d;
+    color: #edf2ff;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.botao-pesquisar:hover{
+    background: #304875;
+}
+
+@media (max-width: 768px){
+    .gd-conteudo{
+        flex-direction: column;
+    }
+
+    .gd-direita{
+        width: 100%;
+    }
+
+    .periodo input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .gd-conteudo{
+        flex-direction: column;
+    }
+
+    .gd-direita{
+        width: 100%;
+    }
+
+    .periodo input{
+        width: 100%;
+    }
+}
 .conteudo1 p{
     text-align: justify;
     line-height: 1.5;

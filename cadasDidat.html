@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Didatico</title>
+    <link rel="icon" href="senaclogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="cadasDidat.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+          <div class="header-esquerda">
+             <a href="telaInicial.html">
+                 <img class="logo" src="senaclogo.png" alt="Logo do SEI">
+             </a>
+              <a href="infoDitat.html">
+                 <button class="info-botao" type="button">Voltar</button>
+             </a>
+         </div>
+
+         <div class="perfil-area">
+             <div class="dropdown">
+                 <button class="dropdown-botao">
+                     FACULDADES
+                     <span class="seta">▾</span>
+                 </button>
+
+                 <div class="dropdown-content">
+                     <a href="#">CRICIÚMA - FACULDADE SENAC</a>
+                     <a href="#">LAGES - FACULDADE SENAC</a>
+                     <a href="#">ARARANGUÁ - FACULDADE SENAC</a>
+                 </div>
+             </div>
+
+             <div class="container-foto">
+                 <a href="tela2.html">
+                     <img class="perfil" src="perfil.png" alt="Foto do perfil">
+                 </a>
+             </div>
+         </div>
+    </header>
+
+        <div class="titulo">
+            <h1>Cadastro Didático</h1>
+            <h2>Setor de Santa Catarina</h2>
+        </div>
+
+        <div class="conteudo">
+
+            <main>
+                <article class="conteudo1">
+                   <div class="gerenciamento-didatico">
+    <div class="gd-topo">Gerenciamento Didático</div>
+
+    <div class="gd-conteudo">
+        <div class="gd-esquerda">
+            <div class="campo">
+                <label>Segmento:</label>
+                <select>
+                    <option>--</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Tipo de Curso:</label>
+                <select>
+                    <option>--</option>
+                </select>
+            </div>
+
+            <div class="campo periodo">
+                <label>Período:</label>
+                <input type="date">
+                <span>a</span>
+                <input type="date">
+            </div>
+
+            <div class="campo">
+                <label>Nome:</label>
+                <input type="text">
+            </div>
+
+            <button class="botao-pesquisar">Pesquisar</button>
+        </div>
+
+        <div class="gd-direita">
+            <div class="gd-item">
+                <label>Turma</label>
+                <div class="input-icon">
+                    <input type="text">
+                    <span>🔍︎</span>
+                </div>
+            </div>
+
+            <div class="gd-item">
+                <label>Ciclo de Matrícula</label>
+                <div class="input-icon">
+                    <input type="text">
+                    <span>🔍︎</span>
+                </div>
+            </div>
+
+            <div class="gd-item">
+                <label>Código Antigo Curso</label>
+                <div class="input-icon">
+                    <input type="text">
+                    <span>🔍︎</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </article>
+            </main>
+
+            <aside>
+            </aside>
+
+        </div>
+
+        <footer class="rodape">
+            © SEI - Sistema Escolar Integrado - Senac.
+        </footer>
+
+    </div>
+
+</body>
+</html>

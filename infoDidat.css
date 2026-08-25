@@ -178,7 +178,7 @@ main{
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.aniversariantes{
+.turmas{
     width: 100%;
     margin-top: 20px;
     background: #ffc88f;
@@ -188,62 +188,78 @@ main{
     overflow-x: auto;
 }
 
-.aniversariantes h4{
+.turmas h4{
     text-align: center;
     color: #fcfbf9;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 16px;
 }
 
-.tabela-aniversariantes{
+.tabela-turmas{
     width: 100%;
     border-collapse: collapse;
     font-size: 13px;
-    background: #fcfbf9;
+    background: #fffef0;
+    min-width: 650px;
 }
 
-.tabela-aniversariantes th,
-.tabela-aniversariantes td{
+.tabela-turmas th,
+.tabela-turmas td{
     border: 1px solid #8aacf7;
-    padding: 6px 8px;
+    padding: 8px 10px;
     text-align: center;
     vertical-align: middle;
 }
 
-.tabela-aniversariantes th{
+.tabela-turmas th{
     background: #8aacf7;
-    color: #fcfbf9;
+    color: #fffef0;
     font-weight: bold;
 }
 
-.tabela-aniversariantes td:nth-child(2),
-.tabela-aniversariantes td:nth-child(4){
-    text-align: left;
+.tabela-turmas td:nth-child(1){
     color: #1b284d;
+    font-weight: bold;
+    width: 140px;
 }
-.tabela-aniversariantes td:nth-child(3){
-    color: #1b284d; /* escolha a cor aqui */
+
+.tabela-turmas td:nth-child(2){
+    color: #6b6b6b;
+    width: 110px;
+}
+
+.tabela-turmas td:nth-child(3){
+    text-align: left;
+    color: #245ace;
     font-weight: bold;
 }
 
-.mais-aniversariantes{
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    font-size: 13px;
-    color: #fcfbf9;
-    text-decoration: none;
+.tabela-turmas tbody tr{
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.mais-aniversariantes:hover{
-    text-decoration: underline;
-}
-.email-icone{
-    color: #1b284d; /* muda a cor aqui */
-    font-size: 16px;
-    font-weight: bold;
+.tabela-turmas tbody tr:hover{
+    background-color: #eaf1ff;
 }
 
+.tabela-turmas tbody tr:active{
+    transform: scale(0.999);
+}
+
+@media (max-width: 768px){
+    .gd-conteudo{
+        flex-direction: column;
+    }
+
+    .gd-direita{
+        width: 100%;
+    }
+
+    .periodo input{
+        width: 100%;
+    }
+}
 .conteudo1 p{
     text-align: justify;
     line-height: 1.5;
