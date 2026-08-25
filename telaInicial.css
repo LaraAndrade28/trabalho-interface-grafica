@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #ffffff;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #245ace;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    width: 150px;
+    height: auto;
+}
+
+.perfil-area{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-botao{
+    padding: 10px 20px;
+    background-color: #1b284d;
+    color: #edf2ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font: 1em tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-botao:hover{
+    background-color: #304875;
+}
+
+.seta{
+    font-size: 12px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 6px;
+    min-width: 280px;
+    background: #1b284d;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    overflow: hidden;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 12px 16px;
+    color: #edf2ff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover{
+    background-color: #304875;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content{
+    display: block;
+}
+
+.container-foto{
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.perfil{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.perfil:hover{
+    transform: scale(1.08);
+}
+
+.titulo{
+    text-align: center;
+    margin: 30px 0;
+    color: #192c5f;
+}
+
+.titulo h1{
+    margin-bottom: 15px;
+}
+
+.titulo h2{
+    margin: 0;
+}
+
+.conteudo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    min-height: calc(65vh);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main{
+    width: 700px;
+}
+
+main h1{
+    margin-bottom: 25px;
+}
+
+main h2{
+    margin-bottom: 25px;
+}
+
+.conteudo1{
+    width: 100%;
+    background-color: #245ace;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.aniversariantes{
+    margin-top: 20px;
+    background: #f7f7f7;
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.aniversariantes h4{
+    text-align: center;
+    color: #1b284d;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.tabela-aniversariantes{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    background: #fffef0;
+}
+
+.tabela-aniversariantes th,
+.tabela-aniversariantes td{
+    border: 1px solid #f2a100;
+    padding: 4px 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabela-aniversariantes th{
+    background: #f5f5f5;
+    color: #1b284d;
+    font-weight: bold;
+}
+
+.tabela-aniversariantes td:nth-child(2),
+.tabela-aniversariantes td:nth-child(4){
+    text-align: left;
+}
+
+.mais-aniversariantes{
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #1b284d;
+    text-decoration: none;
+}
+
+.mais-aniversariantes:hover{
+    text-decoration: underline;
+}
+
+.conteudo1 p{
+    text-align: justify;
+    line-height: 1.5;
+    color: #edf2ff;
+}
+
+.rodape{
+    background-color: #245ace;
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape a{
+    color: #edf2ff;
+    text-decoration: none;
+}
+
+.rodape button{
+    padding: 10px 20px;
+    background-color: #1b284d;
+    color: #edf2ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.rodape button:hover{
+    background-color: #304875;
+}
+
+@media (max-width: 768px){
+    .conteudo{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main,
+    aside{
+        width: 100%;
+    }
+
+    .conteudo1{
+        width: 100%;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .perfil-area{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .dropdown-content{
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
