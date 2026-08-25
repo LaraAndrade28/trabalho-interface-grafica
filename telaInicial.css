@@ -154,7 +154,7 @@ main h2{
 }
 
 .conteudo1{
-    width: 100%;
+    width: ;
     background-color: #245ace;
     color: white;
     padding: 25px;
@@ -225,8 +225,10 @@ main h2{
 
 .rodape{
     background-color: #245ace;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    color: #edf2ff;
+    font-size: small;
 }
 
 .rodape a{
@@ -234,22 +236,6 @@ main h2{
     text-decoration: none;
 }
 
-.rodape button{
-    padding: 10px 20px;
-    background-color: #1b284d;
-    color: #edf2ff;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 0px;
-}
-
-.rodape button:hover{
-    background-color: #304875;
-}
 
 @media (max-width: 768px){
     .conteudo{
